@@ -1,7 +1,6 @@
 /*header*/
 .header {
   width: 1040px;
-  border: 1px solid #ccc;
   margin: 0 auto;
   padding-top: 50px;
   overflow: hidden;
@@ -53,7 +52,6 @@
 /*nav*/
 .nav {
   width: 1040px;
-  border: 1px solid #ccc;
   margin: 29px auto 20px;
   overflow: hidden;
   line-height: 47px;
@@ -71,7 +69,6 @@
 /*banner*/
 .banner {
   width: 1040px;
-  border: 1px solid #ccc;
   margin: 0 auto;
   position: relative;
 }
