@@ -1,0 +1,23 @@
+.search-container{
+    border: 1px solid $titleCol;
+    float: left;
+    width: 360px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    .search{
+        float: left;
+        width: 320px;
+        border:none;
+        line-height: 38px;
+        text-indent: 24px;
+        font-size: $fontSize;
+        border-radius: 5px;
+        color: #999;
+    }
+    .search-btn{
+        float: left;
+        width: 38px;
+        height: 38px;
+        cursor: pointer;
+    }
+}

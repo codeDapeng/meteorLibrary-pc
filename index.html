@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>流星书城-首页</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/swipeSlide.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="images/logo.jpg" alt="">
+        <div class="search-container">
+            <input type="text" class="search" placeholder="输入你想找的书籍">
+            <img class="search-btn" src="images/searchBtn.jpg" alt="">
+        </div>
+        <div class="login-container">
+            <a href="" class="login" style="border-right:1px solid #666">登录</a>
+            <a href="" class="monthly">包月</a>
+        </div>
+    </header>
+    <nav class="nav">
+        <a href="" class="nav-choose">书城</a>
+        <a href="">免费</a>
+        <a href="">分类</a>
+        <a href="">排行榜</a>
+        <a href="">我的书架</a>
+        <a href="">手机看小说</a>
+    </nav>
+    <div class="banner">
+        <div class="slide" id="slide3">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="images/lunbo1.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/lunbo2.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/lunbo3.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/lunbo4.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/lunbo5.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <div class="dot">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="slide-title">
+            <p class="slideTitle">书名abcdefg</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            /*轮播图*/
+            $('#slide3').swipeSlide({
+                continuousScroll: true,
+                speed: 3000,
+                transitionType: 'cubic-bezier(0.22, 0.69, 0.72, 0.88)',
+                firstCallback: function (i, sum, me) {
+                    me.find('.dot').children().first().addClass('cur');
+                },
+                callback: function (i, sum, me) {
+                    me.find('.dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
+                    /*===========书名修改=============*/
+                    $('.slideTitle').html('书名:'+Date());
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

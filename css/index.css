@@ -1,0 +1,142 @@
+/*header*/
+.header {
+  width: 1040px;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  padding-top: 50px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header .logo {
+  height: 40px;
+  float: left;
+}
+.header .search-container {
+  border: 1px solid #ee4f5c;
+  float: left;
+  width: 360px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.header .search-container .search {
+  float: left;
+  width: 320px;
+  border: none;
+  line-height: 38px;
+  text-indent: 24px;
+  font-size: 14px;
+  border-radius: 5px;
+  color: #999;
+}
+.header .search-container .search-btn {
+  float: left;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+}
+.header .login-container {
+  font-size: 14px;
+  line-height: 40px;
+}
+.header .login-container a {
+  color: #666;
+  padding: 0 20px;
+}
+
+/*nav*/
+.nav {
+  width: 1040px;
+  border: 1px solid #ccc;
+  margin: 29px auto 20px;
+  overflow: hidden;
+  line-height: 47px;
+}
+.nav a {
+  padding: 13px 40px;
+  font-size: 18px;
+  color: #666;
+}
+.nav .nav-choose {
+  color: #ee4f5c;
+  border-bottom: 2px solid #ee4f5c;
+}
+
+/*banner*/
+.banner {
+  width: 1040px;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  position: relative;
+}
+.banner .slide {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  height: 375px;
+}
+.banner .slide ul {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.banner .slide ul li {
+  list-style: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.banner .slide ul li img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.banner .slide .dot {
+  position: absolute;
+  right: 50px;
+  bottom: 15px;
+  z-index: 5;
+  font-size: 0;
+}
+.banner .slide .dot span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+  background: #ee4f5c;
+}
+.banner .slide .dot .cur {
+  background-color: #fff;
+}
+.banner .slide:after {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-top: 50%;
+}
+.banner .slide-title {
+  width: 1040px;
+  height: 40px;
+  background: rgba(51, 51, 51, 0.46);
+  position: absolute;
+  bottom: 0;
+}
+.banner .slide-title .slideTitle {
+  line-height: 40px;
+  font-size: 18px;
+  color: #fff;
+  text-indent: 20px;
+}
