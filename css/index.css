@@ -174,3 +174,24 @@
 .content-container .content-title .content-nav .content-nav-choose {
   color: #ee4f5c;
 }
+.content-container .content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.content-container .content .bookModule {
+  width: 130px;
+  height: 206px;
+}
+.content-container .content .bookModule img {
+  width: 110px;
+  border: 1px solid #ffdadd;
+  padding: 10px;
+  box-shadow: 0px 5px 10px #ffdadd;
+}
+.content-container .content .bookModule .bookName {
+  font-size: 16px;
+  color: #333;
+  margin-top: 15px;
+}
