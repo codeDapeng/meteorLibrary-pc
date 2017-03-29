@@ -1,0 +1,30 @@
+.content-container {
+    width: 1040px;
+//    border: 1px solid #ccc;
+    margin: 35px auto 0;
+    .content-title {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid $titleCol;
+        padding: 15px 0;
+        .contentTitle {
+            font-size: $fontSize+10;
+            color: $titleCol;
+            font-weight: bold;
+        }
+        .content-nav {
+            color: $baseWordCol;
+            font-size: $fontSize+4;
+            margin-top: 6px;
+            span{
+                float: left;
+                padding: 0 15px;
+                cursor: pointer;
+                border-right: 1px solid #ccc;
+            }
+            .content-nav-choose {
+                color: $titleCol;
+            }
+        }
+    }
+}
