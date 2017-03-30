@@ -1,15 +1,14 @@
-.bookModule{
+img {
+    width: 110px;
+    border: 1px solid #ffdadd;
+    padding: 10px;
+    box-shadow: 0px 5px 10px #ffdadd;
+}
+
+.bookName {
     width: 130px;
-    height: 206px;
-    img{
-        width: 110px;
-        border: 1px solid #ffdadd;
-        padding: 10px;
-        box-shadow: 0px 5px 10px #ffdadd;
-    }
-    .bookName{
-        font-size: $fontSize+2;
-        color: #333;
-        margin-top: 15px;
-    }
+    font-size: $fontSize+2;
+    color: #333;
+    margin-top: 15px;
+    @include online
 }

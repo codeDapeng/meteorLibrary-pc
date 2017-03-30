@@ -29,8 +29,17 @@
     }
     .content {
         display: flex;
-
-        //book-module
-        @import "../modules/book";
+        flex-flow: row wrap;
+        .bookModule {
+            width: 130px;
+            height: 206px;
+            margin-right: 51px;
+            margin-top: 22px;
+            &:nth-child(6){
+                margin-right:0;
+            }
+            //book
+            @import "../modules/book";
+        }
     }
 }
