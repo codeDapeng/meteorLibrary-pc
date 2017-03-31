@@ -192,7 +192,7 @@
 .content-container .content .bookModule:nth-child(6) {
   margin-right: 0;
 }
-.content-container .content .bookModule img {
+.content-container .content .bookModule .bookPic {
   width: 110px;
   border: 1px solid #ffdadd;
   padding: 10px;
@@ -206,4 +206,207 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.content-container .content .content-leftWrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  width: 313px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+}
+.content-container .content .content-leftWrap .content-leftWrap-t {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+.content-container .content .content-leftWrap .content-leftWrap-t .showBigPic {
+  width: 213px;
+  height: 285px;
+  padding: 11px 8px;
+  border: 1px solid #ffdadd;
+  box-shadow: 0px 5px 10px #ffdadd;
+}
+.content-container .content .content-leftWrap .content-leftWrap-t .littlePics {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.content-container .content .content-leftWrap .content-leftWrap-t .littlePics img {
+  width: 62px;
+  height: 83px;
+  padding: 4px;
+  border: 1px solid #ffdadd;
+  box-shadow: 0px 5px 10px #ffdadd;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.content-container .content .content-leftWrap .content-leftWrap-t .littlePics .bookChoose {
+  opacity: 1;
+  border-color: #ee4f5c;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.content-container .content .content-leftWrap .content-leftWrap-b .title {
+  text-align: center;
+  font-size: 17px;
+  color: #333;
+  line-height: 32px;
+  font-weight: bold;
+}
+.content-container .content .content-leftWrap .content-leftWrap-b .article {
+  color: #666;
+  text-indent: 2rem;
+  font-size: 14px;
+  line-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.content-container .content .content-rightWrap {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width: 677px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.content-container .content .content-rightWrap .content-rightWrap-t {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 173px;
+}
+.content-container .content .content-rightWrap .content-rightWrap-t .content-rightWrap-tModule {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  width: 314px;
+}
+.content-container .content .content-rightWrap .content-rightWrap-t .content-rightWrap-tModule .bookPic {
+  width: 110px;
+  border: 1px solid #ffdadd;
+  padding: 10px;
+  box-shadow: 0px 5px 10px #ffdadd;
+}
+.content-container .content .content-rightWrap .content-rightWrap-t .content-rightWrap-tModule .bookName {
+  width: 130px;
+  font-size: 16px;
+  color: #333;
+  margin-top: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.content-container .content .content-rightWrap .content-rightWrap-t .content-rightWrap-tModule .bookDetail {
+  margin-left: 19px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.content-container .content .content-rightWrap .content-rightWrap-t .content-rightWrap-tModule .bookDetail .title {
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: -25px;
+}
+.content-container .content .content-rightWrap .content-rightWrap-t .content-rightWrap-tModule .bookDetail .article {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  color: #808080;
+  font-size: 14px;
+  line-height: 1.5rem;
+}
+.content-container .content .content-rightWrap .content-rightWrap-t .content-rightWrap-tModule .bookDetail .readNow {
+  font-size: 14px;
+  color: #ff464e;
+}
+.content-container .content .content-rightWrap .content-rightWrap-b .bigTitle {
+  text-align: center;
+  color: #ee4f5c;
+  font-size: 23px;
+}
+.content-container .content .content-rightWrap .content-rightWrap-b .titleWrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+.content-container .content .content-rightWrap .content-rightWrap-b .titleWrap .titleContainer {
+  width: 311px;
+}
+.content-container .content .content-rightWrap .content-rightWrap-b .titleWrap .titleContainer p {
+  line-height: 1.8rem;
+}
+.content-container .content .content-rightWrap .content-rightWrap-b .titleWrap .titleContainer p span {
+  margin-right: 5px;
+}
+.content-container .content .content-rightWrap .content-rightWrap-b .titleWrap .titleContainer p span a {
+  color: #666;
+}
+.content-container .content .content-rightWrap .content-rightWrap-b .titleWrap .titleContainer p a {
+  color: #333;
 }

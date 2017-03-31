@@ -30,16 +30,149 @@
     .content {
         display: flex;
         flex-flow: row wrap;
+        //热门推荐
         .bookModule {
             width: 130px;
             height: 206px;
             margin-right: 51px;
             margin-top: 22px;
-            &:nth-child(6){
-                margin-right:0;
+            &:nth-child(6) {
+                margin-right: 0;
             }
-            //book
+            //book stylesheet
             @import "../modules/book";
+        }
+        //大家爱看
+        .content-leftWrap {
+            display: flex;
+            flex-flow: column wrap;
+            width: 313px;
+            margin-top: 30px;
+            margin-bottom: 50px;
+            margin-right: 50px;
+            //            border: 1px solid #ccc;
+            .content-leftWrap-t {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                margin-bottom: 10px;
+                //                border: 1px solid #ccc;
+                .showBigPic {
+                    width: 213px;
+                    height: 285px;
+                    padding: 11px 8px;
+                    border: 1px solid #ffdadd;
+                    box-shadow: 0px 5px 10px #ffdadd;
+                }
+                .littlePics {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: space-between;
+                    img {
+                        width: 62px;
+                        height: 83px;
+                        padding: 4px;
+                        border: 1px solid #ffdadd;
+                        box-shadow: 0px 5px 10px #ffdadd;
+                        cursor: pointer;
+                        opacity: 0.5;
+                    }
+                    .bookChoose {
+                        opacity: 1;
+                        border-color: #ee4f5c;
+                        @include ani;
+                    }
+                }
+            }
+            .content-leftWrap-b {
+                .title {
+                    text-align: center;
+                    font-size: $fontSize+3;
+                    color: #333;
+                    line-height: 32px;
+                    font-weight: bold;
+                }
+                .article {
+                    color: $baseWordCol;
+                    text-indent: 2rem;
+                    font-size: $fontSize;
+                    line-height: $fontSize+10;
+                    //                    height: 95px;
+                    @include onparagraph(4);
+                }
+            }
+        }
+        .content-rightWrap {
+            margin-top: 30px;
+            margin-bottom: 50px;
+            width: 677px;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-between;
+            .content-rightWrap-t {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                height: 173px;
+                .content-rightWrap-tModule {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    width: 314px;
+                    //book stylesheet
+                    @import "../modules/book";
+                    .bookDetail{
+                        margin-left: 19px;
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: space-between;
+                        .title{
+                            color: #333;
+                            font-weight: bold;
+                            font-size: $fontSize+4;
+                            margin-bottom: -25px;
+                        }
+                        .article{
+                            @include onparagraph(4);
+                            color: #808080;
+                            font-size: $fontSize;
+                            line-height: 1.5rem;
+                        }
+                        .readNow{
+                            font-size: $fontSize;
+                            color: #ff464e;
+
+                        }
+                    }
+                }
+            }
+            .content-rightWrap-b {
+                .bigTitle{
+                    text-align: center;
+                    color: $titleCol;
+                    font-size: $fontSize+9;
+                }
+                .titleWrap{
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                    .titleContainer{
+                        width: 311px;
+                        p{
+                            line-height: 1.8rem;
+                            span{
+                                margin-right: 5px;
+                                a{
+                                    color: #666;
+                                }
+                            }
+                            a{
+                                color: #333;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

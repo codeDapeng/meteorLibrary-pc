@@ -10,3 +10,18 @@ $baseWordCol:#666;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+
+//段落超出几行显示省略号
+@mixin onparagraph($num:4) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $num;
+    -webkit-box-orient: vertical;
+}
+
+// 链接动画
+@mixin ani($time:0.25s) {
+    -webkit-transition: all $time ease-in-out;
+    transition: all $time ease-in-out;
+}

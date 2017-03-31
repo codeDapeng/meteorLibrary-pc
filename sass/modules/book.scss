@@ -1,4 +1,4 @@
-img {
+.bookPic {
     width: 110px;
     border: 1px solid #ffdadd;
     padding: 10px;
@@ -10,5 +10,5 @@ img {
     font-size: $fontSize+2;
     color: #333;
     margin-top: 15px;
-    @include online
+    @include online;
 }
