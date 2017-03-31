@@ -30,6 +30,7 @@
     .content {
         display: flex;
         flex-flow: row wrap;
+        justify-content: space-between;
         //热门推荐
         .bookModule {
             width: 130px;
@@ -120,57 +121,100 @@
                     width: 314px;
                     //book stylesheet
                     @import "../modules/book";
-                    .bookDetail{
+                    .bookDetail {
                         margin-left: 19px;
                         display: flex;
                         flex-flow: column nowrap;
                         justify-content: space-between;
-                        .title{
+                        .title {
                             color: #333;
                             font-weight: bold;
                             font-size: $fontSize+4;
                             margin-bottom: -25px;
                         }
-                        .article{
+                        .article {
                             @include onparagraph(4);
                             color: #808080;
                             font-size: $fontSize;
                             line-height: 1.5rem;
                         }
-                        .readNow{
+                        .readNow {
                             font-size: $fontSize;
                             color: #ff464e;
-
                         }
                     }
                 }
             }
             .content-rightWrap-b {
-                .bigTitle{
+                .bigTitle {
                     text-align: center;
                     color: $titleCol;
                     font-size: $fontSize+9;
+                    font-weight: bold;
                 }
-                .titleWrap{
+                .titleWrap {
                     display: flex;
                     flex-flow: row nowrap;
                     justify-content: space-between;
                     margin-top: 20px;
-                    .titleContainer{
+                    .titleContainer {
                         width: 311px;
-                        p{
+                        p {
                             line-height: 1.8rem;
-                            span{
+                            span {
                                 margin-right: 5px;
-                                a{
+                                a {
                                     color: #666;
                                 }
                             }
-                            a{
+                            a {
                                 color: #333;
                             }
                         }
                     }
+                }
+            }
+        }
+        //排行榜
+        .rankList {
+            width: 313px;
+            margin-top: 30px;
+            .title {
+                font-size: $fontSize+4;
+                color: #333;
+                margin-bottom: 4px;
+            }
+            .rank {
+                line-height: 50px;
+                font-size: $fontSize+4;
+                color: #333;
+                border-bottom: 1px solid #ccc;
+                @include online;
+                span {
+                    display: block;
+                    float: left;
+                    width: 18px;
+                    height: 18px;
+                    line-height: 18px;
+                    text-align: center;
+                    margin-top: 16px;
+                    margin-right: 10px;
+                }
+                &:nth-child(2) span{
+                    background: #ff464e;
+                    color: #fff;
+                }
+                &:nth-child(3) span{
+                    background: #e67225;
+                    color: #fff;
+                }
+                &:nth-child(4) span{
+                    background: #e6bf25;
+                    color: #fff;
+                }
+                a{
+                    color: #333;
+                    font-size: $fontSize+4;
                 }
             }
         }
