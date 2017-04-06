@@ -459,3 +459,103 @@
   color: #333;
   font-size: 18px;
 }
+.content-container .content .update-listWrap {
+  width: 100%;
+}
+.content-container .content .update-listWrap .titleContainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  padding-top: 30px;
+}
+.content-container .content .update-listWrap .titleContainer .title {
+  font-size: 18px;
+  color: #333;
+}
+.content-container .content .update-listWrap .update-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  border-bottom: 1px solid #ccc;
+  line-height: 50px;
+}
+.content-container .content .update-listWrap .update-list .category {
+  width: 130px;
+  color: #666;
+}
+.content-container .content .update-listWrap .update-list .bookname {
+  width: 520px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.content-container .content .update-listWrap .update-list .bookname .name {
+  color: #333;
+  margin-right: 20px;
+}
+.content-container .content .update-listWrap .update-list .bookname .section {
+  color: #666;
+  margin-right: 10px;
+  font-size: 14px;
+}
+.content-container .content .update-listWrap .update-list .bookname .article {
+  color: #666;
+  font-size: 14px;
+}
+.content-container .content .update-listWrap .update-list .author {
+  width: 130px;
+  color: #666;
+}
+.content-container .content .update-listWrap .update-list .update {
+  width: 130px;
+  color: #666;
+}
+
+/*footer*/
+.footer {
+  width: 100%;
+  height: 180px;
+  background: #3e3d43;
+  margin: 50px auto 0;
+  text-align: center;
+  color: #747376;
+}
+.footer .footerNav {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+.footer .footerNav a {
+  color: #fff;
+  padding: 0 24px;
+  font-size: 16px;
+}
+.footer .footerNav a:nth-child(2) {
+  border-left: 1px solid #78787c;
+  border-right: 1px solid #78787c;
+}
+.footer .footerNav a:hover {
+  color: #ee4f5c;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.footer p {
+  line-height: 30px;
+  font-size: 14px;
+}

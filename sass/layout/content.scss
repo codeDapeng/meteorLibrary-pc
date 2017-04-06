@@ -200,21 +200,71 @@
                     margin-top: 16px;
                     margin-right: 10px;
                 }
-                &:nth-child(2) span{
+                &:nth-child(2) span {
                     background: #ff464e;
                     color: #fff;
                 }
-                &:nth-child(3) span{
+                &:nth-child(3) span {
                     background: #e67225;
                     color: #fff;
                 }
-                &:nth-child(4) span{
+                &:nth-child(4) span {
                     background: #e6bf25;
                     color: #fff;
                 }
-                a{
+                a {
                     color: #333;
                     font-size: $fontSize+4;
+                }
+            }
+        }
+        //最近更新
+        .update-listWrap {
+            width: 100%;
+            .titleContainer {
+                display: flex;
+                justify-content: space-between;
+                flex-flow: row nowrap;
+                padding-top: 30px;
+                .title {
+                    font-size: $fontSize+4;
+                    color: #333;
+                }
+            }
+            .update-list{
+                display: flex;
+                justify-content: space-between;
+                flex-flow: row nowrap;
+                border-bottom: 1px solid #ccc;
+                line-height: 50px;
+                .category{
+                    width: 130px;
+                    color: #666;
+                }
+                .bookname{
+                    width:520px;
+                    @include online;
+                    .name{
+                        color: #333;
+                        margin-right: 20px;
+                    }
+                    .section{
+                        color: #666;
+                        margin-right: 10px;
+                        font-size: $fontSize;
+                    }
+                    .article{
+                        color: #666;
+                        font-size: $fontSize;
+                    }
+                }
+                .author{
+                    width: 130px;
+                    color: #666;
+                }
+                .update{
+                    width: 130px;
+                    color: #666;
                 }
             }
         }
