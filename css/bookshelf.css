@@ -142,31 +142,7 @@
 /*content*/
 .content-container {
   width: 1040px;
-  margin: 35px auto 0;
-}
-.content-container .content-nav {
-  overflow: hidden;
-  color: #666;
-  font-size: 14px;
-  margin: -15px 0 30px 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-}
-.content-container .content-nav span {
-  padding: 0 36px;
-  cursor: pointer;
-  border-right: 1px solid #ccc;
-}
-.content-container .content-nav .content-nav-choose {
-  color: #ee4f5c;
+  margin: 0 auto 0;
 }
 .content-container .content {
   display: -webkit-box;
@@ -181,27 +157,35 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.content-container .content .picAndArticle-container {
-  margin-bottom: 30px;
+.content-container .content .bookModule {
+  width: 130px;
+  height: 206px;
+  margin-right: 51px;
+  margin-top: 22px;
+  position: relative;
 }
-.content-container .content .picAndArticle-container .picAndArticle {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  width: 314px;
-  height: 173px;
+.content-container .content .bookModule .del {
+  background: #C4C4C4;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 50%;
+  color: #fff;
+  position: absolute;
+  top: -10px;
+  right: -10px;
 }
-.content-container .content .picAndArticle-container .picAndArticle .bookPic {
+.content-container .content .bookModule:nth-child(6) {
+  margin-right: 0;
+}
+.content-container .content .bookModule .bookPic {
   width: 110px;
   border: 1px solid #ffdadd;
   padding: 10px;
   box-shadow: 0px 5px 10px #ffdadd;
 }
-.content-container .content .picAndArticle-container .picAndArticle .bookName {
+.content-container .content .bookModule .bookName {
   width: 130px;
   font-size: 16px;
   color: #333;
@@ -209,40 +193,6 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-}
-.content-container .content .picAndArticle-container .picAndArticle .bookDetail {
-  margin-left: 19px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: column nowrap;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.content-container .content .picAndArticle-container .picAndArticle .bookDetail .title {
-  color: #333;
-  font-weight: bold;
-  font-size: 18px;
-  margin-bottom: -25px;
-}
-.content-container .content .picAndArticle-container .picAndArticle .bookDetail .article {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  color: #808080;
-  font-size: 14px;
-  line-height: 1.5rem;
-}
-.content-container .content .picAndArticle-container .picAndArticle .bookDetail .readNow {
-  font-size: 14px;
-  color: #ff464e;
 }
 
 /*footer*/
