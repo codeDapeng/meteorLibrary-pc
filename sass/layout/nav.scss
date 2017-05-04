@@ -1,15 +1,16 @@
-.nav{
+.nav {
     width: 1040px;
-//    border: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
     margin: 29px auto 20px;
     overflow: hidden;
     line-height: 47px;
-    a{
-        padding: 13px 40px;
+    a {
+        padding: 13px 40px 11px;
         font-size: $fontSize+4;
         color: $baseWordCol;
+
     }
-    .nav-choose{
+    .nav-choose {
         color: $titleCol;
         border-bottom: 2px solid $titleCol;
     }
