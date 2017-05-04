@@ -115,35 +115,8 @@
                 flex-flow: row nowrap;
                 justify-content: space-between;
                 height: 173px;
-                .content-rightWrap-tModule {
-                    display: flex;
-                    flex-flow: row nowrap;
-                    width: 314px;
-                    //book stylesheet
-                    @import "../modules/book";
-                    .bookDetail {
-                        margin-left: 19px;
-                        display: flex;
-                        flex-flow: column nowrap;
-                        justify-content: space-between;
-                        .title {
-                            color: #333;
-                            font-weight: bold;
-                            font-size: $fontSize+4;
-                            margin-bottom: -25px;
-                        }
-                        .article {
-                            @include onparagraph(4);
-                            color: #808080;
-                            font-size: $fontSize;
-                            line-height: 1.5rem;
-                        }
-                        .readNow {
-                            font-size: $fontSize;
-                            color: #ff464e;
-                        }
-                    }
-                }
+                //picAndArticle module
+                @import "../modules/picAndArticle";
             }
             .content-rightWrap-b {
                 .bigTitle {
@@ -176,47 +149,9 @@
             }
         }
         //排行榜
-        .rankList {
-            width: 313px;
+        .rank-container {
             margin-top: 30px;
-            .title {
-                font-size: $fontSize+4;
-                color: #333;
-                margin-bottom: 4px;
-            }
-            .rank {
-                line-height: 50px;
-                font-size: $fontSize+4;
-                color: #333;
-                border-bottom: 1px solid #ccc;
-                @include online;
-                span {
-                    display: block;
-                    float: left;
-                    width: 18px;
-                    height: 18px;
-                    line-height: 18px;
-                    text-align: center;
-                    margin-top: 16px;
-                    margin-right: 10px;
-                }
-                &:nth-child(2) span {
-                    background: #ff464e;
-                    color: #fff;
-                }
-                &:nth-child(3) span {
-                    background: #e67225;
-                    color: #fff;
-                }
-                &:nth-child(4) span {
-                    background: #e6bf25;
-                    color: #fff;
-                }
-                a {
-                    color: #333;
-                    font-size: $fontSize+2;
-                }
-            }
+            @import "../modules/rankList";
         }
         //最近更新
         .update-listWrap {
@@ -231,38 +166,38 @@
                     color: #333;
                 }
             }
-            .update-list{
+            .update-list {
                 display: flex;
                 justify-content: space-between;
                 flex-flow: row nowrap;
                 border-bottom: 1px solid #ccc;
                 line-height: 50px;
-                .category{
+                .category {
                     width: 130px;
                     color: #666;
                 }
-                .bookname{
-                    width:520px;
+                .bookname {
+                    width: 520px;
                     @include online;
-                    .name{
+                    .name {
                         color: #333;
                         margin-right: 20px;
                     }
-                    .section{
+                    .section {
                         color: #666;
                         margin-right: 10px;
                         font-size: $fontSize;
                     }
-                    .article{
+                    .article {
                         color: #666;
                         font-size: $fontSize;
                     }
                 }
-                .author{
+                .author {
                     width: 130px;
                     color: #666;
                 }
-                .update{
+                .update {
                     width: 136px;
                     color: #666;
                 }

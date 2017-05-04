@@ -1,0 +1,30 @@
+ .picAndArticle {
+     display: flex;
+     flex-flow: row nowrap;
+     width: 314px;
+     height: 173px;
+     //book stylesheet
+     @import "../modules/book";
+     .bookDetail {
+         margin-left: 19px;
+         display: flex;
+         flex-flow: column nowrap;
+         justify-content: space-between;
+         .title {
+             color: #333;
+             font-weight: bold;
+             font-size: $fontSize+4;
+             margin-bottom: -25px;
+         }
+         .article {
+             @include onparagraph(4);
+             color: #808080;
+             font-size: $fontSize;
+             line-height: 1.5rem;
+         }
+         .readNow {
+             font-size: $fontSize;
+             color: #ff464e;
+         }
+     }
+ }

@@ -1,0 +1,42 @@
+.rankList {
+    width: 313px;
+//    margin-top: 30px;
+    .title {
+        font-size: $fontSize+4;
+        color: #333;
+        margin-bottom: 4px;
+    }
+    .rank {
+        line-height: 50px;
+        font-size: $fontSize+4;
+        color: #333;
+        border-bottom: 1px solid #ccc;
+        @include online;
+        span {
+            display: block;
+            float: left;
+            width: 18px;
+            height: 18px;
+            line-height: 18px;
+            text-align: center;
+            margin-top: 16px;
+            margin-right: 10px;
+        }
+        &:nth-child(2) span {
+            background: #ff464e;
+            color: #fff;
+        }
+        &:nth-child(3) span {
+            background: #e67225;
+            color: #fff;
+        }
+        &:nth-child(4) span {
+            background: #e6bf25;
+            color: #fff;
+        }
+        a {
+            color: #333;
+            font-size: $fontSize+2;
+        }
+    }
+}

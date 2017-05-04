@@ -322,7 +322,7 @@
           justify-content: space-between;
   height: 173px;
 }
-.content-container .content .content-rightWrap .content-rightWrap-t .content-rightWrap-tModule {
+.content-container .content .content-rightWrap .content-rightWrap-t .picAndArticle {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -331,14 +331,15 @@
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
   width: 314px;
+  height: 173px;
 }
-.content-container .content .content-rightWrap .content-rightWrap-t .content-rightWrap-tModule .bookPic {
+.content-container .content .content-rightWrap .content-rightWrap-t .picAndArticle .bookPic {
   width: 110px;
   border: 1px solid #ffdadd;
   padding: 10px;
   box-shadow: 0px 5px 10px #ffdadd;
 }
-.content-container .content .content-rightWrap .content-rightWrap-t .content-rightWrap-tModule .bookName {
+.content-container .content .content-rightWrap .content-rightWrap-t .picAndArticle .bookName {
   width: 130px;
   font-size: 16px;
   color: #333;
@@ -347,7 +348,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.content-container .content .content-rightWrap .content-rightWrap-t .content-rightWrap-tModule .bookDetail {
+.content-container .content .content-rightWrap .content-rightWrap-t .picAndArticle .bookDetail {
   margin-left: 19px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -361,13 +362,13 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.content-container .content .content-rightWrap .content-rightWrap-t .content-rightWrap-tModule .bookDetail .title {
+.content-container .content .content-rightWrap .content-rightWrap-t .picAndArticle .bookDetail .title {
   color: #333;
   font-weight: bold;
   font-size: 18px;
   margin-bottom: -25px;
 }
-.content-container .content .content-rightWrap .content-rightWrap-t .content-rightWrap-tModule .bookDetail .article {
+.content-container .content .content-rightWrap .content-rightWrap-t .picAndArticle .bookDetail .article {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -377,7 +378,7 @@
   font-size: 14px;
   line-height: 1.5rem;
 }
-.content-container .content .content-rightWrap .content-rightWrap-t .content-rightWrap-tModule .bookDetail .readNow {
+.content-container .content .content-rightWrap .content-rightWrap-t .picAndArticle .bookDetail .readNow {
   font-size: 14px;
   color: #ff464e;
 }
@@ -416,16 +417,18 @@
 .content-container .content .content-rightWrap .content-rightWrap-b .titleWrap .titleContainer p a {
   color: #333;
 }
-.content-container .content .rankList {
-  width: 313px;
+.content-container .content .rank-container {
   margin-top: 30px;
 }
-.content-container .content .rankList .title {
+.content-container .content .rank-container .rankList {
+  width: 313px;
+}
+.content-container .content .rank-container .rankList .title {
   font-size: 18px;
   color: #333;
   margin-bottom: 4px;
 }
-.content-container .content .rankList .rank {
+.content-container .content .rank-container .rankList .rank {
   line-height: 50px;
   font-size: 18px;
   color: #333;
@@ -434,7 +437,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.content-container .content .rankList .rank span {
+.content-container .content .rank-container .rankList .rank span {
   display: block;
   float: left;
   width: 18px;
@@ -444,19 +447,19 @@
   margin-top: 16px;
   margin-right: 10px;
 }
-.content-container .content .rankList .rank:nth-child(2) span {
+.content-container .content .rank-container .rankList .rank:nth-child(2) span {
   background: #ff464e;
   color: #fff;
 }
-.content-container .content .rankList .rank:nth-child(3) span {
+.content-container .content .rank-container .rankList .rank:nth-child(3) span {
   background: #e67225;
   color: #fff;
 }
-.content-container .content .rankList .rank:nth-child(4) span {
+.content-container .content .rank-container .rankList .rank:nth-child(4) span {
   background: #e6bf25;
   color: #fff;
 }
-.content-container .content .rankList .rank a {
+.content-container .content .rank-container .rankList .rank a {
   color: #333;
   font-size: 16px;
 }
