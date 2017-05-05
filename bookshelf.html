@@ -33,16 +33,60 @@
     </nav>
 
     <div class="content-container">
-       <p class="bookshelfTitle">我的书架（<span id="bookNum">12</span>本）</p>
+        <p class="bookshelfTitle">我的书架（<span id="bookNum"></span>本）</p>
         <div class="content">
             <div class="bookModule">
                 <a href=""><img class="bookPic" src="images/book.jpg" alt=""></a>
                 <div class="del">x</div>
                 <a href="">
-                    <p class="bookName">书名xxx12312312312312312123</p>
+                    <p class="bookName">书名1xxx12312312312312312123</p>
+                </a>
+            </div>
+            <div class="bookModule">
+                <a href=""><img class="bookPic" src="images/book.jpg" alt=""></a>
+                <div class="del">x</div>
+                <a href="">
+                    <p class="bookName">书名2xxx12312312312312312123</p>
+                </a>
+            </div>
+            <div class="bookModule">
+                <a href=""><img class="bookPic" src="images/book.jpg" alt=""></a>
+                <div class="del">x</div>
+                <a href="">
+                    <p class="bookName">书名3xxx12312312312312312123</p>
+                </a>
+            </div>
+            <div class="bookModule">
+                <a href=""><img class="bookPic" src="images/book.jpg" alt=""></a>
+                <div class="del">x</div>
+                <a href="">
+                    <p class="bookName">书名4xxx12312312312312312123</p>
+                </a>
+            </div>
+            <div class="bookModule">
+                <a href=""><img class="bookPic" src="images/book.jpg" alt=""></a>
+                <div class="del">x</div>
+                <a href="">
+                    <p class="bookName">书名5xxx12312312312312312123</p>
+                </a>
+            </div>
+            <div class="bookModule">
+                <a href=""><img class="bookPic" src="images/book.jpg" alt=""></a>
+                <div class="del">x</div>
+                <a href="">
+                    <p class="bookName">书名6xxx12312312312312312123</p>
+                </a>
+            </div>
+            <div class="bookModule">
+                <a href=""><img class="bookPic" src="images/book.jpg" alt=""></a>
+                <div class="del">x</div>
+                <a href="">
+                    <p class="bookName">书名7xxx12312312312312312123</p>
                 </a>
             </div>
         </div>
+        <img src="images/nobook.jpg" width=139 height=171 class="nobook" style="display:none;margin:130px auto 50px;" alt="">
+        <p class="nobook" style="text-align:center;display:none"><a href="index.html" style="color:#ee4f5c">去书城看看 >></a></p>
     </div>
 
     <div class="footer">
@@ -61,7 +105,27 @@
     </div>
 
     <script>
-
+        $(document).ready(function () {
+            //书架书籍数量初始化
+            var num = $(".content").children().length;
+            $(".bookshelfTitle #bookNum").html(num);
+            //删除书架上的书籍
+            $(".content .bookModule").hover(function () {
+                $(this).find(".del").show();
+            }, function () {
+                $(this).find(".del").hide();
+            });
+            $(".content").delegate(".del", "click", function () {
+                $(this).parent().remove();
+                num = $(".content").children().length;
+                $(".bookshelfTitle #bookNum").html(num);
+                if(num==0){
+                    $(".nobook").css({
+                        display:"block"
+                    });
+                }
+            });
+        });
     </script>
 </body>
 
