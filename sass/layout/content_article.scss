@@ -1,0 +1,72 @@
+.content-container {
+    width: 1040px;
+    //    border: 1px solid #ccc;
+    margin: 0 auto 0;
+    .content {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        .step {
+            color: #666;
+            font-size: $fontSize;
+            //            border-bottom: 1px solid #ccc;
+            line-height: $fontSize+30;
+            a {
+                color: #666;
+                font-size: $fontSize;
+                ;
+            }
+        }
+        .title {
+            text-align: center;
+            font-size: $fontSize+16;
+            font-weight: bold;
+        }
+        .artInfo {
+            text-align: center;
+            font-size: $fontSize;
+            color: #666;
+            line-height: 25px;
+            margin:20px 0 45px;
+            .section {
+                margin-right: 15px;
+            }
+        }
+        .article {
+            font-size: $fontSize+2;
+            color: #333;
+            text-indent: 2rem;
+            line-height: 40px;
+        }
+        .buttonWrap {
+            text-align: center;
+            overflow: hidden;
+            margin: 30px 0;
+            span {
+                border: 1px solid #ccc;
+                display: inline-block;
+                padding: 6px 10px;
+                cursor: pointer;
+                color: #333;
+                &:hover {
+                    background: $titleCol;
+                    color: #fff;
+                    @include ani;
+                }
+            }
+            .menu {
+                margin: 0 10px;
+                padding: 6px 0;
+                a {
+                    color: #333;
+                    padding: 6px 10px;
+                    &:hover {
+                        background: $titleCol;
+                        color: #fff;
+                        @include ani;
+                    }
+                }
+            }
+        }
+    }
+}

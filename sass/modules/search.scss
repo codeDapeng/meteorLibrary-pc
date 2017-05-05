@@ -8,11 +8,12 @@
         float: left;
         width: 320px;
         border:none;
+        outline: none;
         line-height: 38px;
         text-indent: 24px;
         font-size: $fontSize;
         border-radius: 5px;
-        color: #999;
+        color: #333;
     }
     .search-btn{
         float: left;
