@@ -2,7 +2,7 @@ $(document).ready(function () {
    $(window).resize(function(){
 
 		$(".login_cover .login_con").css({"margin-top":(window.innerHeight-$(".login_cover .login_con").height())/2+"px"});
-	})
+	});
 
 
 	$(".login").on("click",function(){
