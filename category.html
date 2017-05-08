@@ -109,6 +109,13 @@
         <p>Copyright © 2016 qianbainuo.com All rights reserved.</p>
         <p>流星书城版权所有 2016-10-09 19:38:36</p>
     </div>
+    <script>
+        $(".content-container .content-nav span").on("click",function(){
+//            console.log($(this).index())
+            $(".content-container .content-nav span").removeClass('content-nav-choose');
+            $(this).addClass('content-nav-choose');
+        });
+    </script>
 </body>
 
 </html>

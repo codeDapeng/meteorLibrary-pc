@@ -100,6 +100,10 @@
                     line-height: $fontSize+10;
                     //                    height: 95px;
                     @include onparagraph(4);
+                    &:hover{
+                            color: $titleCol;
+                            @include ani();
+                        }
                 }
             }
         }
@@ -142,6 +146,10 @@
                             }
                             a {
                                 color: #333;
+                                &:hover {
+                                    color: $titleCol;
+                                    @include ani();
+                                }
                             }
                         }
                     }
@@ -175,10 +183,26 @@
                 .category {
                     width: 130px;
                     color: #666;
+                    &:hover {
+                        color: $titleCol;
+                        @include ani();
+                    }
                 }
                 .bookname {
                     width: 520px;
                     @include online;
+                    &:hover .name {
+                        color: $titleCol;
+                        @include ani();
+                    }
+                    &:hover .section {
+                        color: $titleCol;
+                        @include ani();
+                    }
+                    &:hover .article {
+                        color: $titleCol;
+                        @include ani();
+                    }
                     .name {
                         color: #333;
                         margin-right: 20px;
@@ -196,6 +220,10 @@
                 .author {
                     width: 130px;
                     color: #666;
+                    &:hover {
+                        color: $titleCol;
+                        @include ani();
+                    }
                 }
                 .update {
                     width: 136px;

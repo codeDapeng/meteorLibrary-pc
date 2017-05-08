@@ -1,6 +1,6 @@
 .rankList {
     width: 313px;
-//    margin-top: 30px;
+    //    margin-top: 30px;
     .title {
         font-size: $fontSize+4;
         color: #333;
@@ -12,6 +12,10 @@
         color: #333;
         border-bottom: 1px solid #ccc;
         @include online;
+        &:hover a{
+            color: $titleCol;
+            @include ani();
+        }
         span {
             display: block;
             float: left;

@@ -21,6 +21,10 @@
              color: #808080;
              font-size: $fontSize;
              line-height: 1.5rem;
+             &:hover {
+                 color: $titleCol;
+                 @include ani();
+             }
          }
          .readNow {
              font-size: $fontSize;

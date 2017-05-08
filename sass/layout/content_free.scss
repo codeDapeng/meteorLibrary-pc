@@ -14,9 +14,14 @@
             padding: 0 36px;
             cursor: pointer;
             border-right: 1px solid #ccc;
+            &:hover{
+                    color: $titleCol;
+                    @include ani();
+                }
         }
         .content-nav-choose {
             color: $titleCol;
+
         }
     }
     .content {
