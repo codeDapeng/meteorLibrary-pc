@@ -9,7 +9,6 @@
         .step {
             color: #666;
             font-size: $fontSize;
-            //            border-bottom: 1px solid #ccc;
             line-height: $fontSize+30;
             a {
                 color: #666;
@@ -96,14 +95,20 @@
                 border-bottom: 1px solid #eee;
                 text-align: left;
                 cursor: pointer;
+                &:hover {
+                        color: $titleCol;
+                        @include ani;
+                    }
+                &:hover span{
+                        color: $titleCol;
+                        @include ani;
+                    }
                 span {
                     margin-left: 30px;
                     color: #333;
+
                 }
-                &:hover {
-                    color: $titleCol;
-                    @include ani;
-                }
+
             }
         }
         .buttonWrap {

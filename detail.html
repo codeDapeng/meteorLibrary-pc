@@ -49,26 +49,66 @@
             </div>
             <h2 class="h-title">目录<span>共330章</span></h2>
             <ul class="sec2">
-                <a href=""><li>第001章 <span>打探1</span></li></a>
-                <a href=""><li>第002章 <span>打探2</span></li></a>
-                <a href=""><li>第003章 <span>打探3</span></li></a>
-                <a href=""><li>第004章 <span>打探4</span></li></a>
-                <a href=""><li>第005章 <span>打探5</span></li></a>
-                <a href=""><li>第006章 <span>打探6</span></li></a>
-                <a href=""><li>第007章 <span>打探7</span></li></a>
-                <a href=""><li>第008章 <span>打探8</span></li></a>
-                <a href=""><li>第009章 <span>打探9</span></li></a>
-                <a href=""><li>第010章 <span>打探</span></li></a>
-                <a href=""><li>第011章 <span>打探</span></li></a>
-                <a href=""><li>第012章 <span>被捕</span></li></a>
-                <a href=""><li>第013章 <span>被捕</span></li></a>
-                <a href=""><li>第014章 <span>被捕</span></li></a>
-                <a href=""><li>第015章 <span>被捕</span></li></a>
-                <a href=""><li>第016章 <span>被捕</span></li></a>
-                <a href=""><li>第017章 <span>被捕</span></li></a>
-                <a href=""><li>第018章 <span>被捕</span></li></a>
-                <a href=""><li>第019章 <span>被捕</span></li></a>
-                <a href=""><li>第020章 <span>被捕</span></li></a>
+                <a href="">
+                    <li>第001章 <span>打探1</span></li>
+                </a>
+                <a href="">
+                    <li>第002章 <span>打探2</span></li>
+                </a>
+                <a href="">
+                    <li>第003章 <span>打探3</span></li>
+                </a>
+                <a href="">
+                    <li>第004章 <span>打探4</span></li>
+                </a>
+                <a href="">
+                    <li>第005章 <span>打探5</span></li>
+                </a>
+                <a href="">
+                    <li>第006章 <span>打探6</span></li>
+                </a>
+                <a href="">
+                    <li>第007章 <span>打探7</span></li>
+                </a>
+                <a href="">
+                    <li>第008章 <span>打探8</span></li>
+                </a>
+                <a href="">
+                    <li>第009章 <span>打探9</span></li>
+                </a>
+                <a href="">
+                    <li>第010章 <span>打探</span></li>
+                </a>
+                <a href="">
+                    <li>第011章 <span>打探</span></li>
+                </a>
+                <a href="">
+                    <li>第012章 <span>被捕</span></li>
+                </a>
+                <a href="">
+                    <li>第013章 <span>被捕</span></li>
+                </a>
+                <a href="">
+                    <li>第014章 <span>被捕</span></li>
+                </a>
+                <a href="">
+                    <li>第015章 <span>被捕</span></li>
+                </a>
+                <a href="">
+                    <li>第016章 <span>被捕</span></li>
+                </a>
+                <a href="">
+                    <li>第017章 <span>被捕</span></li>
+                </a>
+                <a href="">
+                    <li>第018章 <span>被捕</span></li>
+                </a>
+                <a href="">
+                    <li>第019章 <span>被捕</span></li>
+                </a>
+                <a href="">
+                    <li>第020章 <span>被捕</span></li>
+                </a>
             </ul>
             <p class="buttonWrap">
                 <span class="up">上一页</span>
@@ -94,6 +134,41 @@
         <p>Copyright © 2016 qianbainuo.com All rights reserved.</p>
         <p>流星书城版权所有 2016-10-09 19:38:36</p>
     </div>
+    <script>
+        $(".buttonWrap .up").on('click', function () {
+            $.ajax({
+                type: "get",
+                url: "",
+                success: function () {
+
+                }
+            });
+        });
+        $(".buttonWrap .down").on('click', function () {
+            $.ajax({
+                type: "get",
+                url: "",
+                success: function () {
+
+                }
+            });
+        });
+        $(".buttonWrap .menu").on('click', function () {
+            var targetNum = $(".buttonWrap #num").val();
+            var nowNum = $(".buttonWrap .son").html();
+            var totalNum = $(".buttonWrap .total").html();
+            if (targetNum <= totalNum) {
+                $.ajax({
+                    type: "get",
+                    url: "",
+                    success: function () {
+
+                    }
+                });
+            }
+
+        });
+    </script>
 </body>
 
 </html>
